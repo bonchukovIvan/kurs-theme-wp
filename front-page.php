@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php get_header(); ?>
 
-<section class="about-me">
+<section class="about-me" style="background-image: url(<?php echo KURSTHEME_THEME_URI.'/assets/img/bck1.png'; ?>);">
     <div class="container">
         <div class="about-me__body">
             <div class="about-me__img">
@@ -62,7 +62,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     </div>
 </section>
 
-<section class="advantages">
+<section class="advantages" style="background-image: url(<?php echo KURSTHEME_THEME_URI.'/assets/img/bck2.png'; ?>);">
     <!--  -->
     <div class="container">
         <div class="advantages__body">
