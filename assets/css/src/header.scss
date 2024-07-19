@@ -1,3 +1,13 @@
-body {
-    background-color: aqua;
+.m-header {
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        ul.m-header__menu {
+            display: flex;
+            gap: 15px;
+        }
+    }
+    &__icons {
+        display: flex;
+    }
 }

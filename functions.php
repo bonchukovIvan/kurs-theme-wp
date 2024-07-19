@@ -13,8 +13,9 @@ function wbsmd_add_theme_scripts() {
      * include styles
      */
 	wp_enqueue_style( 'style', KURSTHEME_THEME_URI . '/assets/css/style.min.css' );
-	wp_enqueue_style( 'gooseberry', KURSTHEME_THEME_URI . 'goosberry_version_02.otf' );
-	wp_enqueue_style( 'bct', KURSTHEME_THEME_URI . 'bct.ttf' );
+	// wp_enqueue_style( 'gooseberry', KURSTHEME_THEME_URI . '/assets/fonts/goosberry_version_02.otf' );
+	// wp_enqueue_style( 'bct', KURSTHEME_THEME_URI . '/assets/fonts/bct.ttf' );
+    wp_enqueue_style('custom-fonts', KURSTHEME_THEME_URI . '/assets/fonts/custom-fonts.css', array(), null);
     /* 
      * register jquery
      */

@@ -46,10 +46,31 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-body {
-  background-color: aqua;
+.m-header__body {
+  display: flex;
+  justify-content: space-between;
+}
+.m-header__body ul.m-header__menu {
+  display: flex;
+  gap: 15px;
+}
+.m-header__icons {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: #2F2F2F;
 }
 
 body {
   background-color: #FFF8EA;
+  font-size: 36px;
+  font-family: "gooseberry", sans-serif;
+  color: #2F2F2F;
+}
+
+.container {
+  max-width: 1250px;
+  margin: auto;
 }
