@@ -1,13 +1,130 @@
+.m-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 21;
+}
 .m-header__body {
+  padding: 50px 25px 0px;
   display: flex;
-  justify-content: space-between;
 }
 .m-header__body ul.m-header__menu {
   display: flex;
   gap: 15px;
 }
+.m-header__modile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 35px;
+}
 .m-header__icons {
   display: flex;
+  gap: 15px;
+}
+
+.about-me {
+  position: relative;
+  z-index: 20;
+  padding: 250px 0;
+}
+.about-me__body {
+  display: flex;
+  gap: 100px;
+}
+.about-me__text {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+  padding: 50px 0;
+}
+.about-me__text p {
+  font-size: 64px;
+  text-transform: uppercase;
+}
+.about-me__btn button {
+  padding: 15px 45px;
+  color: #fff;
+  font-family: "gooseberry", sans-serif;
+  font-size: 48px;
+  background-color: #EF6E1C;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.about-me__img {
+  width: 618px;
+  height: 618px;
+  position: relative;
+}
+.about-me__img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-me__img--above {
+  position: absolute;
+  bottom: -45px;
+  left: -50px;
+}
+
+.about-kurs {
+  padding: 150px;
+  position: relative;
+}
+.about-kurs__title {
+  z-index: 21;
+  position: relative;
+  top: -280px;
+}
+.about-kurs__title div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 658px;
+  height: 227px;
+}
+.about-kurs__title h3 {
+  position: absolute;
+  top: 90px;
+  left: 227px;
+  font-size: 64px;
+}
+.about-kurs__title img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-kurs__text {
+  line-height: 1.4;
+  width: 75%;
+}
+.about-kurs__cards {
+  padding-top: 75px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.about-kurs__card {
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+}
+.about-kurs__back {
+  z-index: 10;
+  position: absolute;
+  top: -100%;
+  right: -60%;
+}
+.about-kurs__back--above {
+  position: relative;
+  right: 70%;
+  top: 125px;
 }
 
 a {

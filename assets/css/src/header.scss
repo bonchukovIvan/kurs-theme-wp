@@ -1,13 +1,25 @@
 .m-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 21;
     &__body {
+        padding: 50px 25px 0px;
         display: flex;
-        justify-content: space-between;
         ul.m-header__menu {
             display: flex;
             gap: 15px;
         }
     }
+    &__modile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-left: 35px;
+    }
     &__icons {
         display: flex;
+        gap: 15px;
     }
 }

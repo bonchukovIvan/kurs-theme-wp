@@ -1,10 +1,13 @@
 @use 'header' as h;
 @use 'footer' as f;
+@use 'about-me' as am;
+@use 'about-kurs' as ak;
 
 a {
     text-decoration: none;
     color: #2F2F2F;
 }
+
 body {
     background-color: #FFF8EA;
     font-size: 36px;
