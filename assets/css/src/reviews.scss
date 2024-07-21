@@ -51,40 +51,80 @@
             position: relative;
             z-index: 21;
         }
-        > div {
+        &--text {
             position: relative;
             top: 70px;
-            left: 100px;
+            left: 90px;
             font-size: 36px;
         }
+        .flowers {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
         &#review1 {
-            > div {
+            .reviews__item--text {
                 left: 140px;
+            }
+            .flowers {
+                top: -90px;
+                left: -190px;
             }
         }
         &#review2 {
             top: 250px;
             left: 0px;
             z-index: 20;
-            > div {
-                top: 10px;
+            .reviews__item--text {
+                top: 30px;
+            }
+            .flowers {
+                top: -90px;
+                left:590px;
+                &--first {
+                    left: -50px;
+                }
+                &--second {
+                    left: 70px;
+                    top: 150px;
+                }
             }
         }
         &#review3 {
             top: 10px;
             left: 80px;
-            > div {
+            .reviews__item--text {
                 max-width: 400px;
                 top: 110px;
+                right: 50px;
+            }
+            .flowers {
+                top: 350px;
+                right: 250px;
             }
         }
         &#review4 {
             top: 210px;
-            left: 0px
+            left: 0px;
+            .reviews__item--text {
+                top: 100px;
+            }
+            .flowers {
+                top: 450px;
+                right: -20px;
+                &--second {
+                    top: -80px;
+                    left: 50px;
+                }
+            }
         }
         &#review5 {
             top: 190px;
-            left: 90px
+            left: 90px;
+            .flowers {
+                top: 450px;
+                right: -20px;
+            }
         }
     }
 }

@@ -24,4 +24,19 @@
             color: #fff;
         }
     }
+    &__copyright {
+        padding: 30px 0 ;
+        color: #fff;
+        font-size: 24px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 270px;
+        span {
+            text-decoration: dashed;
+            position: relative;
+            display: inline-block;
+            text-decoration-line: underline;
+            text-decoration-style: dashed;
+        }
+    }
 }

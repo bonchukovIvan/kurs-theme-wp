@@ -51,6 +51,22 @@
 .m-footer__menu li a {
   color: #fff;
 }
+.m-footer__copyright {
+  padding: 30px 0;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 270px;
+}
+.m-footer__copyright span {
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+  position: relative;
+  display: inline-block;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+}
 
 .about-me {
   position: relative;
@@ -267,38 +283,78 @@
   position: relative;
   z-index: 21;
 }
-.reviews__item > div {
+.reviews__item--text {
   position: relative;
   top: 70px;
-  left: 100px;
+  left: 90px;
   font-size: 36px;
 }
-.reviews__item#review1 > div {
+.reviews__item .flowers {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.reviews__item#review1 .reviews__item--text {
   left: 140px;
+}
+.reviews__item#review1 .flowers {
+  top: -90px;
+  left: -190px;
 }
 .reviews__item#review2 {
   top: 250px;
   left: 0px;
   z-index: 20;
 }
-.reviews__item#review2 > div {
-  top: 10px;
+.reviews__item#review2 .reviews__item--text {
+  top: 30px;
+}
+.reviews__item#review2 .flowers {
+  top: -90px;
+  left: 590px;
+}
+.reviews__item#review2 .flowers--first {
+  left: -50px;
+}
+.reviews__item#review2 .flowers--second {
+  left: 70px;
+  top: 150px;
 }
 .reviews__item#review3 {
   top: 10px;
   left: 80px;
 }
-.reviews__item#review3 > div {
+.reviews__item#review3 .reviews__item--text {
   max-width: 400px;
   top: 110px;
+  right: 50px;
+}
+.reviews__item#review3 .flowers {
+  top: 350px;
+  right: 250px;
 }
 .reviews__item#review4 {
   top: 210px;
   left: 0px;
 }
+.reviews__item#review4 .reviews__item--text {
+  top: 100px;
+}
+.reviews__item#review4 .flowers {
+  top: 450px;
+  right: -20px;
+}
+.reviews__item#review4 .flowers--second {
+  top: -80px;
+  left: 50px;
+}
 .reviews__item#review5 {
   top: 190px;
   left: 90px;
+}
+.reviews__item#review5 .flowers {
+  top: 450px;
+  right: -20px;
 }
 
 a {

@@ -27,13 +27,18 @@
                 ]); ?>
                 <div class="m-footer__icons">
                     <div>
-                        <img src="<?php echo KURSTHEME_THEME_URI.'/assets/img/phone.svg'?>" alt="">
+                        <img src="<?php echo KURSTHEME_THEME_URI.'/assets/img/phone-w.svg'?>" alt="">
                     </div>
                     <div>
-                        <img src="<?php echo KURSTHEME_THEME_URI.'/assets/img/inst.svg'?>" alt="">
+                        <img src="<?php echo KURSTHEME_THEME_URI.'/assets/img/inst-w.svg'?>" alt="">
                     </div>
                 </div>
             </div>
+
+        </div>
+        <div class="m-footer__copyright">
+            <p>© Зно з історії України</p>
+            <p>DESIGN: <span>MYBURGERISNOTYOURS</span></p>
         </div>
     </div>
 </footer>
