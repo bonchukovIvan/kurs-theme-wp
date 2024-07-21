@@ -1,0 +1,54 @@
+.advantages {
+    padding: 200px;
+    position: relative;
+    z-index: 20;
+    &__title {
+        z-index: 21;
+        position: absolute;
+        top: -325px;
+        right: 0;
+        div {
+            top: 0;
+            left: 0;
+            width: 826px;
+            height: 264px;
+        }
+        h3 {
+            position: absolute;
+            top: 110px;
+            left: 227px;
+            font-size: 64px;
+        }
+        img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    &__card {
+        flex: 500px;
+        display: flex;
+        gap: 30px;
+    }
+    &__number {
+        font-size: 96px;
+        color: #EF6E1C;
+        line-height: 0.6;
+    }
+    &__back {
+        position: absolute;
+        bottom: 0;
+        left: -200px;
+    }
+    &__flowers {
+        position: absolute;
+        top: -200px;
+        right: -50px;
+        z-index: 22;
+    }
+}

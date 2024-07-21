@@ -72,6 +72,34 @@ table {
   gap: 15px;
 }
 
+.m-footer {
+  background-color: #725543;
+}
+.m-footer__body {
+  display: flex;
+  padding: 25px;
+  gap: 30px;
+}
+.m-footer__mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.m-footer__icons {
+  display: flex;
+  color: #fff;
+  gap: 15px;
+}
+.m-footer__menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.m-footer__menu li a {
+  color: #fff;
+}
+
 .about-me {
   position: relative;
   z-index: 20;
@@ -118,13 +146,13 @@ table {
 }
 
 .about-kurs {
-  padding: 150px;
+  padding: 200px;
   position: relative;
 }
 .about-kurs__title {
   z-index: 21;
   position: relative;
-  top: -280px;
+  top: -325px;
 }
 .about-kurs__title div {
   position: absolute;
@@ -140,8 +168,8 @@ table {
   font-size: 64px;
 }
 .about-kurs__title img {
-  height: 100%;
-  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -175,6 +203,152 @@ table {
   top: 125px;
 }
 
+.advantages {
+  padding: 200px;
+  position: relative;
+  z-index: 20;
+}
+.advantages__title {
+  z-index: 21;
+  position: absolute;
+  top: -325px;
+  right: 0;
+}
+.advantages__title div {
+  top: 0;
+  left: 0;
+  width: 826px;
+  height: 264px;
+}
+.advantages__title h3 {
+  position: absolute;
+  top: 110px;
+  left: 227px;
+  font-size: 64px;
+}
+.advantages__title img {
+  max-height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.advantages__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.advantages__card {
+  flex: 500px;
+  display: flex;
+  gap: 30px;
+}
+.advantages__number {
+  font-size: 96px;
+  color: #EF6E1C;
+  line-height: 0.6;
+}
+.advantages__back {
+  position: absolute;
+  bottom: 0;
+  left: -200px;
+}
+.advantages__flowers {
+  position: absolute;
+  top: -200px;
+  right: -50px;
+  z-index: 22;
+}
+
+.reviews {
+  padding: 200px 0 500px;
+}
+.reviews__back {
+  position: absolute;
+  top: -500px;
+  right: -450px;
+  z-index: 1;
+}
+.reviews__title {
+  z-index: 21;
+  position: relative;
+  top: -325px;
+}
+.reviews__title div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 658px;
+  height: 227px;
+}
+.reviews__title h3 {
+  position: absolute;
+  top: 90px;
+  left: 227px;
+  font-size: 64px;
+}
+.reviews__title img {
+  max-height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.reviews__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 130px;
+}
+.reviews__item {
+  position: relative;
+}
+.reviews__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.reviews__item h2 {
+  font-size: 96px;
+  position: relative;
+  color: #EF6E1C;
+  z-index: 21;
+}
+.reviews__item p {
+  position: relative;
+  z-index: 21;
+}
+.reviews__item > div {
+  position: relative;
+  top: 70px;
+  left: 100px;
+  font-size: 36px;
+}
+.reviews__item#review1 > div {
+  left: 140px;
+}
+.reviews__item#review2 {
+  top: 250px;
+  left: 0px;
+  z-index: 20;
+}
+.reviews__item#review2 > div {
+  top: 10px;
+}
+.reviews__item#review3 {
+  top: 10px;
+  left: 80px;
+}
+.reviews__item#review3 > div {
+  max-width: 400px;
+  top: 110px;
+}
+.reviews__item#review4 {
+  top: 210px;
+  left: 0px;
+}
+.reviews__item#review5 {
+  top: 190px;
+  left: 90px;
+}
+
 a {
   text-decoration: none;
   color: #2F2F2F;
@@ -185,6 +359,7 @@ body {
   font-size: 36px;
   font-family: "gooseberry", sans-serif;
   color: #2F2F2F;
+  overflow-x: hidden;
 }
 
 .container {

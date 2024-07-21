@@ -1,0 +1,27 @@
+.m-footer {
+    background-color: #725543;
+    &__body {
+        display: flex;
+        padding: 25px;
+        gap: 30px;
+    }
+    &__mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    &__icons {
+        display: flex;
+        color: #fff;
+        gap: 15px;
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        li a {
+            color: #fff;
+        }
+    }
+}
