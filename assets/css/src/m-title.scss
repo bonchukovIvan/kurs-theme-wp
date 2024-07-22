@@ -1,0 +1,23 @@
+.m-title {
+    min-width: 800px;
+    min-height: 250px;
+    background-repeat: no-repeat!important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -150px;
+    h3 {
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 979px) {
+    .m-title {
+        max-width: 100%;
+        min-width: inherit;
+    }
+}

@@ -6,7 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 
-<?php get_header(); ?>
+<?php 
+get_header(); 
+?>
 
 <?php 
 
@@ -16,8 +18,10 @@ get_template_part('template-parts/home/home', 'aboutkurs');
 
 get_template_part('template-parts/home/home', 'advantages');
 
-get_template_part('template-parts/home/home', 'reviews'); 
+get_template_part('template-parts/home/home', 'reviews');
 
 ?>
 
-<?php get_footer(); ?>
+<?php 
+get_footer(); 
+?>

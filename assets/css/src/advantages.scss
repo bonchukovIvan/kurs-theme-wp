@@ -1,28 +1,20 @@
 .advantages {
-    padding: 200px;
-    position: relative;
+    padding: 0 0 350px;
     z-index: 20;
     &__title {
-        z-index: 21;
-        position: absolute;
-        top: -325px;
-        right: 0;
-        div {
-            top: 0;
-            left: 0;
-            width: 826px;
-            height: 264px;
-        }
+        min-width: 800px;
+        min-height: 250px;
+        background-repeat: no-repeat!important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+        background-position: center !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -150px;
         h3 {
-            position: absolute;
-            top: 110px;
-            left: 227px;
             font-size: 64px;
-        }
-        img {
-            max-height: 100%;
-            max-width: 100%;
-            object-fit: cover;
         }
     }
     &__cards {
@@ -47,8 +39,17 @@
     }
     &__flowers {
         position: absolute;
-        top: -200px;
+        top: -100px;
         right: -50px;
         z-index: 22;
+    }
+}
+
+@media (max-width: 979px) {
+    .advantages {
+        &__back {
+            left: -60px;
+            bottom: -190px;
+        }
     }
 }

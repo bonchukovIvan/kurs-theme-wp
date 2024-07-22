@@ -2,17 +2,16 @@
     <!--  -->
 
     <div class="container" style="position: relative;">
-    <div class="advantages__back">
-        <img src="<?php echo KURSTHEME_THEME_URI.'/assets/img/flower-1.png'?>" alt="">
-    </div>
-    <div class="advantages__flowers">
-        <img src="<?php echo KURSTHEME_THEME_URI.'/assets/img/flower-2.png'?>" alt="">
-        <img src="<?php echo KURSTHEME_THEME_URI.'/assets/img/flower-3.png'?>" alt="">
-    </div>
+        <div class="advantages__back">
+            <img src="<?php echo KURSTHEME_THEME_URI.'/assets/img/flower-1.png'?>" alt="">
+        </div>
+        <div class="advantages__flowers">
+            <img src="<?php echo KURSTHEME_THEME_URI.'/assets/img/flower-2.png'?>" alt="">
+            <img src="<?php echo KURSTHEME_THEME_URI.'/assets/img/flower-3.png'?>" alt="">
+        </div>
         <div class="advantages__body">
-            <div class="advantages__title">
+            <div class="m-title" style="background: url(<?php echo KURSTHEME_THEME_URI.'/assets/img/asset-title-2.png'?>);">
                 <h3>ПЕРЕВАГИ КУРСУ</h3>
-                <img src="<?php echo KURSTHEME_THEME_URI.'/assets/img/asset-title-2.png'?>" alt="">
             </div>
             <div class="advantages__cards">
                 <div class="advantages__card">
