@@ -12,7 +12,7 @@ function create_custom_posts() {
     register_post_type('custom_post',
         array(
             'labels' => array(
-                'name' => __('Карточка про курс'),
+                'name' => __('Карточки про курс'),
                 'singular_name' => __('Карточка про курс')
             ),
             'public' => true,
@@ -21,6 +21,19 @@ function create_custom_posts() {
             'supports' => array('title','thumbnail',),
         )
     );
+
+    register_post_type('krs_advantages',
+    array(
+        'labels' => array(
+            'name' => __('Переваги'),
+            'singular_name' => __('Перевага')
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'custom-posts'),
+        'supports' => array('title', 'editor',),
+    )
+);
 }
 add_action('init', 'create_custom_posts');
 
@@ -29,8 +42,6 @@ function wbsmd_add_theme_scripts() {
      * include styles
      */
 	wp_enqueue_style( 'style', KURSTHEME_THEME_URI . '/assets/css/style.min.css' );
-	// wp_enqueue_style( 'gooseberry', KURSTHEME_THEME_URI . '/assets/fonts/goosberry_version_02.otf' );
-	// wp_enqueue_style( 'bct', KURSTHEME_THEME_URI . '/assets/fonts/bct.ttf' );
     wp_enqueue_style('custom-fonts', KURSTHEME_THEME_URI . '/assets/fonts/custom-fonts.css', array(), null);
     /* 
      * register jquery

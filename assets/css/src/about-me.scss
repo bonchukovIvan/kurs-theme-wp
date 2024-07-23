@@ -2,6 +2,8 @@
     position: relative;
     z-index: 21;
     padding: 250px 0;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     &__body {
         display: flex;
         gap: 100px;

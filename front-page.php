@@ -6,11 +6,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 
-<?php 
-get_header(); 
-?>
+<?php get_header(); ?>
 
 <?php 
+
+get_template_part('template-parts/common/common', 'modal');
 
 get_template_part('template-parts/home/home', 'aboutme');
 
@@ -22,6 +22,4 @@ get_template_part('template-parts/home/home', 'reviews');
 
 ?>
 
-<?php 
-get_footer(); 
-?>
+<?php get_footer(); ?>

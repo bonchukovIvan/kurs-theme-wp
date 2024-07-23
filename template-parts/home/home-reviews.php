@@ -1,3 +1,24 @@
+<?php 
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly.
+}
+
+$review1_title = get_field('reviews-1_title') ? get_field('reviews-1_title') : '';
+$review1_text = get_field('reviews-1_text') ? get_field('reviews-1_text') : '';
+
+$review2_title = get_field('reviews-2_title') ? get_field('reviews-2_title') : '';
+$review2_text = get_field('reviews-2_text') ? get_field('reviews-2_text') : '';
+
+$review3_title = get_field('reviews-3_title') ? get_field('reviews-3_title') : '';
+$review3_text = get_field('reviews-3_text') ? get_field('reviews-3_text') : '';
+
+$review4_title = get_field('reviews-4_title') ? get_field('reviews-4_title') : '';
+$review4_text = get_field('reviews-4_text') ? get_field('reviews-4_text') : '';
+
+$review5_title = get_field('reviews-5_title') ? get_field('reviews-5_title') : '';
+$review5_text = get_field('reviews-5_text') ? get_field('reviews-5_text') : '';
+?>
+
 <section class="reviews">
     <!--  -->
     <div class="container" style="position: relative;">
@@ -12,8 +33,8 @@
             <div class="reviews__items">
                 <div class="reviews__item" id="review1" style="background: url(<?php echo KURSTHEME_THEME_URI.'/assets/img/r1.png'?>);">
                     <div class="reviews__item--text">
-                        <h2>Аня, 186</h2>
-                        <p>Маргарита досить уважна, знає свій матеріал ну просто на зубок. Уроки проходять завжди відмінно, а якщо мені щось незрозуміло, я можу завжди перепитати, дізнатися, а вона пояснить: що? як? чому? В цілому я дуже задоволена курсом!</p>
+                        <h2><?php echo $review1_title ?></h2>
+                        <?php echo $review1_text ?>
                         <div class="flowers">
                             <img src="<?php echo KURSTHEME_THEME_URI.'/assets/img/flower.png'?>" alt="">
                         </div>
@@ -22,8 +43,8 @@
 
                 <div class="reviews__item" id="review2" style="background: url(<?php echo KURSTHEME_THEME_URI.'/assets/img/r2.png'?>);">
                     <div class="reviews__item--text">
-                        <h2>СОФІЯ, 178</h2>
-                        <p>Маргарита - чудова репетиторка, вчить за своїми матеріалами та зрозуміло, часто з якимось гумором викладає свій предмет. Подобається те, що після кожної пройденої теми дається тест на рівень знання пройденого навчального матеріалу, де твої неправильні відповіді не ігноруються, а повторно розбираються.</p>
+                        <h2><?php echo $review2_title ?></h2>
+                        <?php echo $review2_text ?>
                         <div class="flowers">
                             <img class="flowers--first" src="<?php echo KURSTHEME_THEME_URI.'/assets/img/flower-4.png'?>" alt="">
                             <img class="flowers--second" src="<?php echo KURSTHEME_THEME_URI.'/assets/img/flower-2.png'?>" alt="">
@@ -33,8 +54,8 @@
 
                 <div class="reviews__item" id="review3" style="background: url(<?php echo KURSTHEME_THEME_URI.'/assets/img/r3.png'?>);">
                     <div class="reviews__item--text">
-                        <h2>МАРІЯ, 190</h2>
-                        <p>Маргарита стала моєю першою репетиторкою, проте враження від уроків приємні! Працювати з нею легко, все зрозуміло та доступно, цікаво. </p>
+                        <h2><?php echo $review3_title ?></h2>
+                        <?php echo $review3_text ?>
                         <div class="flowers">
                             <img src="<?php echo KURSTHEME_THEME_URI.'/assets/img/flower-1.png'?>" alt="">
                         </div>
@@ -43,8 +64,8 @@
 
                 <div class="reviews__item" id="review4" style="background: url(<?php echo KURSTHEME_THEME_URI.'/assets/img/r4.png'?>);">
                     <div class="reviews__item--text">
-                        <h2>Богдан, 195</h2>
-                        <p>Міцненько, добренько. Уроки ємні, без зайвої інформації, але з цікавими фактами. Особливо запам'яталася розповідь про Олену Вітер. Гарний бал я отримав через правильно розставлені акценти зі вчительської сторони.</p>
+                        <h2><?php echo $review4_title ?></h2>
+                        <?php echo $review4_text ?>
                         <div class="flowers">
                             <img class="flowers--first" src="<?php echo KURSTHEME_THEME_URI.'/assets/img/flower-2.png'?>" alt="">
                             <img class="flowers--second" src="<?php echo KURSTHEME_THEME_URI.'/assets/img/flower-3.png'?>" alt="">
@@ -54,8 +75,8 @@
 
                 <div class="reviews__item" id="review5" style="background: url(<?php echo KURSTHEME_THEME_URI.'/assets/img/r5.png'?>);">
                     <div class="reviews__item--text">
-                        <h2>НАСТЯ, 184</h2>
-                        <p>Маргарита чудово знаходить підхід до кожного учня та дає найпотрібнішу інформацію в цікавому вигляді. Її спосіб навчання допоміг мені краще засвоїти матеріал. Пам'ятаю, як сиділа на іспиті та побачила портрет Сагайдачного, і в мене в голові пролунав голос Маргарити, який розповідав, чим же таким важливим нам ця особа запам'яталася.</p>
+                        <h2><?php echo $review5_title ?></h2>
+                        <?php echo $review5_text ?>
                         <div class="flowers">
                             <img src="<?php echo KURSTHEME_THEME_URI.'/assets/img/flower-4.png'?>" alt="">
                         </div>

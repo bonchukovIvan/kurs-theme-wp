@@ -6,7 +6,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 $main_text = get_field('about-me_text') ? get_field('about-me_text') : '';
 $btn_text = get_field('about-me_text') ? get_field('about-me_btn') : '';
 $img = get_field('about-me_text') ? get_field('about-me_img') : '';
-
 ?>
 
 <section class="about-me" style="background-image: url(<?php echo KURSTHEME_THEME_URI.'/assets/img/bck1.png'; ?>);">
@@ -23,7 +22,7 @@ $img = get_field('about-me_text') ? get_field('about-me_img') : '';
                     </div>
                 </div>
                 <div class="about-me__btn">
-                    <button><?php echo $btn_text; ?></button>
+                    <button id="openmodal"><?php echo $btn_text; ?></button>
                 </div>
             </div>
 

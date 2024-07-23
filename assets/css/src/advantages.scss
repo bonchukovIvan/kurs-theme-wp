@@ -1,11 +1,12 @@
 .advantages {
     padding: 0 0 350px;
     position: relative;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     z-index: 20;
     &__title {
         min-width: 800px;
         min-height: 250px;
-        background-repeat: no-repeat!important;
         background-repeat: no-repeat !important;
         background-size: contain !important;
         background-position: center !important;
