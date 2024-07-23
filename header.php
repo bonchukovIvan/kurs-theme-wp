@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <?php wp_body_open(); ?>
     <div id="page" class="site">
         <?php 
-        // get_template_part('template-parts/header/header', 'main'); 
+        get_template_part('template-parts/header/header', 'main'); 
         ?>
             <div id="content" class="site-content">
                 <div id="primary" class="content-area">

@@ -4,11 +4,14 @@
             <div class="m-header__logo">
                 <img src="<?php echo KURSTHEME_THEME_URI.'/assets/img/logo.svg'?>" alt="">
             </div>
-            <div class="m-header__modile">
+            <div class="burger">
+                <span></span>
+            </div>
+            <div class="m-header__mobile">
                 <?php wp_nav_menu([
                         'menu'                 => '',
                         'container'            => 'div',
-                        'container_class'      => 'm-header__navigation',
+                        'container_class'      => 'm-header__navigation ',
                         'container_id'         => '',
                         'container_aria_label' => '',
                         'menu_class'           => 'm-header__menu',
