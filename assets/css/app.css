@@ -12,14 +12,6 @@
   display: flex;
   gap: 15px;
 }
-.m-header__body ul.m-header__menu li:hover {
-  -webkit-text-decoration: dashed;
-  text-decoration: dashed;
-  position: relative;
-  display: inline-block;
-  text-decoration-line: underline;
-  text-decoration-style: dashed;
-}
 .m-header__mobile {
   display: flex;
   justify-content: space-between;
@@ -230,7 +222,7 @@
 
 @media (max-width: 979px) {
   .about-me {
-    padding: 100px 20px;
+    padding: 150px 20px 100px;
   }
   .about-me__body {
     display: block;

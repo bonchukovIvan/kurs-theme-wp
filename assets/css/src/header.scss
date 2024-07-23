@@ -9,14 +9,6 @@
         ul.m-header__menu {
             display: flex;
             gap: 15px;
-            li:hover {
-                -webkit-text-decoration: dashed;
-                text-decoration: dashed;
-                position: relative;
-                display: inline-block;
-                text-decoration-line: underline;
-                text-decoration-style: dashed;
-            }
         }
     }
     &__mobile {

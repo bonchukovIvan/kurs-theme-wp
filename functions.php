@@ -8,6 +8,22 @@ define('KURSTHEME_THEME_URI', get_template_directory_uri());
 
 define('KURSTHEME_THEME_PATH', get_template_directory());
 
+function create_custom_posts() {
+    register_post_type('custom_post',
+        array(
+            'labels' => array(
+                'name' => __('Карточка про курс'),
+                'singular_name' => __('Карточка про курс')
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'custom-posts'),
+            'supports' => array('title','thumbnail',),
+        )
+    );
+}
+add_action('init', 'create_custom_posts');
+
 function wbsmd_add_theme_scripts() {
     /* 
      * include styles

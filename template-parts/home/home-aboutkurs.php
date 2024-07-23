@@ -1,3 +1,17 @@
+<?php 
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly.
+}
+
+$main_text = get_field('about-kurs_text') ? get_field('about-kurs_text') : '';
+$args = array(
+    'post_type' => 'custom_post',
+    'posts_per_page' => 10,
+);
+
+$custom_query = new WP_Query($args);
+?>
+
 <section class="about-kurs">
     <div class="container" style="position: relative;">
         <div class="about-kurs__body">
@@ -10,16 +24,21 @@
             </div>
             <div class="about-kurs__inner">
                 <div class="about-kurs__text">
-                    <p>Я знаю, як допомогти тобi  впоратися зi всiма освiтнiми труднощами та не втратити голову в гонитві за відмінними результатами.
-                        <br>Я вірю, що навчання може бути приємним! Пізнавати історію рідної держави, дізнаватися про подвиги та біди своїх пращурів – наче шукати скарб, захований у руїнах древніх цивілізацій.
-                    </p>
+                    <?php echo $main_text; ?>
                 </div>
                 <div class="about-kurs__cards">
-                    <div class="about-kurs__card"
-                    style="background: url('<?php echo KURSTHEME_THEME_URI.'/assets/img/a1.png'; ?>');">
-                        <h4>Вміст курсу – 70 уроків</h4>
-                    </div>
-                    <div class="about-kurs__card" style="background: url('<?php echo KURSTHEME_THEME_URI.'/assets/img/a2.png'; ?>');">
+                <?php if ($custom_query->have_posts()) :
+                    while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
+                        <div class="about-kurs__card"
+                        style="background: url('<?php echo get_the_post_thumbnail_url(); ?>');">
+                            <h4><?php the_title(); ?></h4>
+                        </div>
+                    <?php endwhile;
+                    else :
+                        echo '<p>No content found</p>';
+                    endif;
+                ?>
+                    <!-- <div class="about-kurs__card" style="background: url('<?php echo KURSTHEME_THEME_URI.'/assets/img/a2.png'; ?>');">
                         <h4>Тривалість курсу – 9 місяців</h4>
                     </div>
                     <div class="about-kurs__card" style="background: url('<?php echo KURSTHEME_THEME_URI.'/assets/img/a3.png'; ?>');">
@@ -33,7 +52,7 @@
                     </div>
                     <div class="about-kurs__card" style="background: url('<?php echo KURSTHEME_THEME_URI.'/assets/img/a6.png'; ?>');">
                         <h4>Вартість – 550 грн/місяць</h4>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
