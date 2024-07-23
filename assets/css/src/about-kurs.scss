@@ -1,0 +1,75 @@
+.about-kurs {
+    position: relative;
+    padding: 0px 0px 200px;
+    &__text {
+        line-height: 1.4;
+        width: 75%;
+    }
+    &__cards {
+        padding-top: 75px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+    &__card {
+        background-repeat: no-repeat!important;
+        background-size: cover!important;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+    }
+    &__back {
+        z-index: 10;
+        position: absolute;
+        top: -550px;
+        right: -850px;
+        &--above {
+            position: relative;
+            right: 70%;
+            top: 125px;
+        }
+    }
+}
+
+@media (max-width: 979px) {
+    .about-kurs {
+        &__text {
+            line-height: 1.4;
+            width: 80%;
+            p {
+                font-size: 20px;
+            }
+        }
+        padding:  0 20px;
+        &__back {
+            right: 950px;
+        }
+        &__cards {
+            grid-template-columns: 1fr;
+            padding: 75px 30px 0;
+        }
+        &__card {
+            padding: 30px;
+            h4 {
+                font-size: 20px;
+            }
+        }
+        &__back {
+            z-index: 10;
+            position: absolute;
+            top: -550px;
+            right: -650px;
+            &--above {
+                position: relative;
+                right: 70%;
+                top: 125px;
+                height: 200px;
+            }
+        }
+        &__inner {
+            position: relative;
+            top: -150px;
+            z-index: 26;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@use 'header' as h;
+@use 'footer' as f;
+@use 'about-me' as am;
+@use 'about-kurs' as ak;
+@use 'advantages' as ad;
+@use 'reviews' as rw;
+@use 'm-title' as mt;
+@use 'modal' as md;
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #2F2F2F;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+    background-color: #FFF8EA;
+    font-size: 36px;
+    font-family: 'gooseberry', sans-serif;
+    color: #2F2F2F;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1250px;
+    margin: auto;
+}
