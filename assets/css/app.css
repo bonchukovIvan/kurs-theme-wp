@@ -68,9 +68,32 @@
   text-decoration-style: dashed;
 }
 
+@media (max-width: 979px) {
+  .m-footer__body {
+    display: block;
+  }
+  .m-footer__copyright {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    align-items: center;
+  }
+  .m-footer__menu li a {
+    font-size: 20px;
+  }
+  .m-footer__mobile {
+    position: relative;
+    justify-content: center;
+  }
+  .m-footer__icons {
+    position: absolute;
+    top: -70px;
+    right: 0;
+  }
+}
 .about-me {
   position: relative;
-  z-index: 20;
+  z-index: 21;
   padding: 250px 0;
 }
 .about-me__body {
@@ -126,7 +149,7 @@
 
 @media (max-width: 979px) {
   .about-me {
-    padding: 100px 0;
+    padding: 100px 20px;
   }
   .about-me__body {
     display: block;
@@ -160,8 +183,7 @@
 }
 .about-kurs {
   position: relative;
-  z-index: 20;
-  padding: 0 0 200px;
+  padding: 0px 0px 200px;
 }
 .about-kurs__text {
   line-height: 1.4;
@@ -174,7 +196,6 @@
   gap: 25px;
 }
 .about-kurs__card {
-  background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   padding: 25px;
@@ -184,8 +205,8 @@
 .about-kurs__back {
   z-index: 10;
   position: absolute;
-  top: -100%;
-  right: -60%;
+  top: -550px;
+  right: -850px;
 }
 .about-kurs__back--above {
   position: relative;
@@ -194,19 +215,50 @@
 }
 
 @media (max-width: 979px) {
+  .about-kurs {
+    padding: 0 20px;
+  }
+  .about-kurs__text {
+    line-height: 1.4;
+    width: 80%;
+  }
+  .about-kurs__text p {
+    font-size: 20px;
+  }
   .about-kurs__back {
-    display: none;
+    right: 950px;
   }
   .about-kurs__cards {
     grid-template-columns: 1fr;
     padding: 75px 30px 0;
   }
   .about-kurs__card {
-    padding: 50px;
+    padding: 30px;
+  }
+  .about-kurs__card h4 {
+    font-size: 20px;
+  }
+  .about-kurs__back {
+    z-index: 10;
+    position: absolute;
+    top: -550px;
+    right: -650px;
+  }
+  .about-kurs__back--above {
+    position: relative;
+    right: 70%;
+    top: 125px;
+    height: 200px;
+  }
+  .about-kurs__inner {
+    position: relative;
+    top: -150px;
+    z-index: 26;
   }
 }
 .advantages {
   padding: 0 0 350px;
+  position: relative;
   z-index: 20;
 }
 .advantages__title {
@@ -249,17 +301,46 @@
   position: absolute;
   top: -100px;
   right: -50px;
-  z-index: 22;
+  z-index: 26;
 }
 
 @media (max-width: 979px) {
+  .advantages {
+    padding: 0 20px;
+  }
+  .advantages__cards {
+    position: relative;
+    top: -150px;
+    padding: 15px;
+  }
+  .advantages__cards p {
+    font-size: 20px;
+  }
+  .advantages__number {
+    font-size: 54px;
+  }
   .advantages__back {
-    left: -60px;
-    bottom: -190px;
+    left: -10px;
+    bottom: 80px;
+  }
+  .advantages__back img {
+    max-height: 150px;
+  }
+  .advantages__flowers {
+    top: -30px;
+    right: 0;
+  }
+  .advantages__flowers img {
+    max-height: 100px;
   }
 }
 .reviews {
   padding: 0 0 200px;
+}
+.reviews__back {
+  position: absolute;
+  top: -250px;
+  right: -600px;
 }
 .reviews__items {
   display: grid;
@@ -284,14 +365,29 @@
   max-width: 500px;
 }
 .reviews__item .flowers {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
 }
+.reviews__item#review1 .flowers {
+  top: -150px;
+  left: -250px;
+}
 .reviews__item#review2 {
   top: 250px;
   left: -50px;
+}
+.reviews__item#review2 .reviews__item--text {
+  top: 0px;
+  left: 80px;
+}
+.reviews__item#review2 .flowers {
+  left: 370px !important;
+  top: -100px;
+}
+.reviews__item#review2 .flowers--second {
+  position: relative;
+  left: 150px;
 }
 .reviews__item#review3 {
   top: -50px;
@@ -301,20 +397,143 @@
   top: 100px;
   left: 70px;
 }
+.reviews__item#review3 .flowers {
+  top: 150px;
+  left: -150px;
+}
 .reviews__item#review4 {
   top: 180px;
   left: -50px;
 }
+.reviews__item#review4 .reviews__item--text {
+  left: 70px;
+}
+.reviews__item#review4 .flowers {
+  top: 250px;
+  left: 350px;
+  display: flex;
+  align-items: flex-end;
+}
 .reviews__item#review5 {
+  top: -50px;
   left: 50px;
+}
+.reviews__item#review5 .flowers {
+  top: 290px;
+  left: 450px;
 }
 
 @media (max-width: 979px) {
+  .reviews {
+    padding: 0 20px 0px;
+  }
   .reviews__items {
     grid-template-columns: 1fr;
+    position: relative;
+    top: -150px;
+    width: 110%;
   }
   .reviews__item {
-    position: initial;
+    background-position: center !important;
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+    display: flex;
+    justify-content: center;
+    max-height: 350px;
+    min-height: 250px;
+  }
+  .reviews__item--text {
+    max-width: 300px;
+  }
+  .reviews__item--text h2 {
+    font-size: 48px;
+  }
+  .reviews__item--text p {
+    font-size: 20px;
+  }
+  .reviews__item .flowers {
+    max-height: 200px;
+  }
+  .reviews__item#review1 {
+    height: 400px;
+  }
+  .reviews__item#review1 .reviews__item--text {
+    left: 0px;
+  }
+  .reviews__item#review1 .flowers {
+    height: 200px;
+    top: initial;
+    left: initial;
+    bottom: -10px;
+    right: 0;
+  }
+  .reviews__item#review1 .flowers img {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .reviews__item#review2 {
+    top: -30px !important;
+  }
+  .reviews__item#review2 .reviews__item--text {
+    top: 10px;
+    left: 10px;
+  }
+  .reviews__item#review2 .flowers {
+    display: none;
+    top: initial;
+    left: initial;
+    bottom: -150px;
+    right: 0;
+  }
+  .reviews__item#review3 {
+    height: 350px;
+    top: -50px !important;
+  }
+  .reviews__item#review3 .reviews__item--text {
+    max-width: 190px;
+    top: 100px;
+    left: 0;
+  }
+  .reviews__item#review3 .flowers {
+    top: initial;
+    left: initial;
+    top: -75px;
+    left: -100px;
+  }
+  .reviews__item#review3 .flowers img {
+    height: 150px;
+  }
+  .reviews__item#review4 {
+    height: 350px;
+    top: -100px !important;
+  }
+  .reviews__item#review4 .reviews__item--text {
+    max-width: 250px;
+    top: 100px;
+    left: 0;
+  }
+  .reviews__item#review4 .flowers {
+    top: -100px;
+    left: 250px;
+  }
+  .reviews__item#review5 {
+    top: -100px !important;
+    height: 450px;
+  }
+  .reviews__item#review5 .reviews__item--text {
+    max-width: 300px;
+    top: 40px;
+    left: 0;
+  }
+  .reviews__item#review5 .flowers {
+    left: 200px;
+    top: 250px;
+  }
+  .reviews__item#review5 .flowers img {
+    height: 100px;
   }
 }
 .m-title {
@@ -328,7 +547,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  top: -150px;
+  top: -130px;
+  z-index: 25;
 }
 .m-title h3 {
   font-size: 64px;
@@ -338,6 +558,9 @@
   .m-title {
     max-width: 100%;
     min-width: inherit;
+  }
+  .m-title h3 {
+    font-size: 30px;
   }
 }
 a {

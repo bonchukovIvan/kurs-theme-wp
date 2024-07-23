@@ -1,5 +1,6 @@
 .advantages {
     padding: 0 0 350px;
+    position: relative;
     z-index: 20;
     &__title {
         min-width: 800px;
@@ -41,15 +42,37 @@
         position: absolute;
         top: -100px;
         right: -50px;
-        z-index: 22;
+        z-index: 26;
     }
 }
 
 @media (max-width: 979px) {
     .advantages {
+        padding: 0 20px;
+        &__cards {
+            position: relative;
+            top: -150px;
+            padding: 15px;
+            p {
+                font-size: 20px;
+            }
+        }
+        &__number {
+            font-size: 54px;
+        }
         &__back {
-            left: -60px;
-            bottom: -190px;
+            left: -10px;
+            bottom: 80px;
+            img {
+                max-height: 150px;
+            }
+        }
+        &__flowers {
+            top: -30px;
+            right: 0;
+            img {
+                max-height: 100px;
+            }
         }
     }
 }

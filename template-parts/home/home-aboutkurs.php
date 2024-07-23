@@ -1,10 +1,10 @@
 <section class="about-kurs">
     <div class="container" style="position: relative;">
         <div class="about-kurs__body">
-            <!-- <div class="about-kurs__back">
+            <div class="about-kurs__back">
                 <img class="about-kurs__back--under" src="<?php echo KURSTHEME_THEME_URI.'/assets/img/grid.png'?>" alt="">
                 <img class="about-kurs__back--above" src="<?php echo KURSTHEME_THEME_URI.'/assets/img/flower.png'?>" alt="">
-            </div> -->
+            </div>
             <div class="m-title" style="background: url(<?php echo KURSTHEME_THEME_URI.'/assets/img/asset-title-1.png'?>);">
                 <h3>ПРО КУРС</h3>
             </div>

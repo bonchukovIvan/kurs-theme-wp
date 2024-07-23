@@ -1,6 +1,6 @@
 .about-me {
     position: relative;
-    z-index: 20;
+    z-index: 21;
     padding: 250px 0;
     &__body {
         display: flex;
@@ -55,7 +55,7 @@
 
 @media (max-width: 979px) {
     .about-me {
-        padding: 100px 0;
+        padding: 100px 20px;
         &__body {
             display: block;
         }

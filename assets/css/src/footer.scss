@@ -40,3 +40,31 @@
         }
     }
 }
+
+@media (max-width: 979px) {
+    .m-footer {
+        &__body {
+            display: block;
+        }
+        &__copyright {
+            flex-direction: column;
+            gap: 15px;
+            font-size: 16px;
+            align-items: center;
+        }
+        &__menu {
+            li a {
+                font-size: 20px;
+            }
+        }
+        &__mobile {
+            position: relative;
+            justify-content: center;
+        }
+        &__icons {
+            position: absolute;
+            top: -70px;
+            right: 0;
+        }
+    }
+}
