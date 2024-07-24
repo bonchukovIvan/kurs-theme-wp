@@ -12,7 +12,7 @@ $args = array(
 $abouts = new WP_Query($args);
 ?>
 
-<section class="about-kurs">
+<section class="about-kurs" id="about-kurs">
     <div class="container" style="position: relative;">
         <div class="about-kurs__body">
             <div class="about-kurs__back">

@@ -12,7 +12,7 @@ $args = array(
 $custom_query = new WP_Query($args);
 ?>
 
-<section class="advantages" style="background-image: url(<?php echo KURSTHEME_THEME_URI.'/assets/img/bck2.png'; ?>);">
+<section class="advantages" style="background-image: url(<?php echo KURSTHEME_THEME_URI.'/assets/img/bck2.png'; ?>);" id="advantages">
     <!--  -->
 
     <div class="container" style="position: relative;">

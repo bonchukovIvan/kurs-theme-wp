@@ -8,7 +8,7 @@ $btn_text = get_field('about-me_text') ? get_field('about-me_btn') : '';
 $img = get_field('about-me_text') ? get_field('about-me_img') : '';
 ?>
 
-<section class="about-me" style="background-image: url(<?php echo KURSTHEME_THEME_URI.'/assets/img/bck1.png'; ?>);">
+<section class="about-me" style="background-image: url(<?php echo KURSTHEME_THEME_URI.'/assets/img/bck1.png'; ?>);" id="about-me">
     <div class="container">
         <div class="about-me__body">
             <div class="about-me__text">
