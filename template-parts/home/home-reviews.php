@@ -19,7 +19,7 @@ $review5_title = get_field('reviews-5_title') ? get_field('reviews-5_title') : '
 $review5_text = get_field('reviews-5_text') ? get_field('reviews-5_text') : '';
 ?>
 
-<section class="reviews">
+<section class="reviews" id="reviews">
     <!--  -->
     <div class="container" style="position: relative;">
 

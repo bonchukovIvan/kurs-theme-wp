@@ -2,7 +2,9 @@ $(document).ready(function() {
     $('.burger').click(function(e) {
         $('.burger, .m-header__mobile').toggleClass('active');
     });
-    
+    $('.menu-item').click(function(e) {
+        $('.burger, .m-header__mobile').toggleClass('active');
+    });
     $('#openmodal').click(function(e) {
         $('.modal').toggleClass('active');
     });
